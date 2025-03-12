@@ -77,11 +77,33 @@
 
                         //finaliza programa
                     case 3:
-                        Console.WriteLine("Ok, saindo! \nFinalizando programa. \nVOLTE SEMRRE!");
+                        Console.WriteLine("Ok, saindo! \nFinalizando programa. \nVOLTE SEMPRE!");
                         Console.Clear();
                         break;
 
                 }
+
+
+                Console.WriteLine(" Qual período deseja matricular o aluno? \n1) Manhã. \n2) Tarde. \n3) Noite.");
+                int periodo = int.Parse(Console.ReadLine());
+                
+               
+                if (periodo == 1) {
+                    Console.WriteLine("Aluno matriculado no período da manhã.");
+                }
+                if (periodo == 2)
+                {
+                    Console.WriteLine("Aluno matriculado no período da tarde.");
+                }
+                if (periodo == 3)
+                {
+                    Console.WriteLine("Aluno matriculado no período da noite.");
+                }
+                else
+                {
+                    Console.WriteLine("Opção inválida.");
+                }
+
                 //solicitador do laço while iniciado no começo do código para voltar ao menu principal ou encerrar o programa
                 Console.WriteLine("Deseja voltar ao menu principal? \n1) Sim. \n2) Não.");
                 opcao3 = int.Parse(Console.ReadLine());
